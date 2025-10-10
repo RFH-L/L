@@ -2,36 +2,61 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Halaman Simpel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Saya</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            text-align: center;
-            padding: 50px;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 700px;
+            margin: 50px auto;
+            background-color: #ffffff;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        .profile-img {
+            width: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
         }
         h1 {
             color: #333;
+            margin-bottom: 10px;
         }
         p {
-            color: #666;
+            color: #555;
+            line-height: 1.6;
         }
-        button {
-            padding: 10px 20px;
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+        .info {
+            margin-top: 20px;
         }
-        button:hover {
-            background-color: #0056b3;
+        .info-item {
+            margin-bottom: 10px;
+        }
+        .label {
+            font-weight: bold;
+            color: #222;
         }
     </style>
 </head>
 <body>
-    <h1>Selamat Datang!</h1>
-    <p>Ini adalah contoh halaman HTML yang sangat sederhana.</p>
-    <button onclick="alert('Tombol ditekan!')">Klik Saya</button>
+    <div class="container">
+        <center>
+            https://via.placeholder.com/150
+            <h1>Nama Lengkap</h1>
+            <p>Deskripsi singkat tentang diri Anda, seperti pekerjaan, minat, atau latar belakang pendidikan.</p>
+        </center>
+        <div class="info">
+            <div class="info-item"><span class="label">Email:</span> nama@email.com</div>
+            <div class="info-item"><span class="label">Telepon:</span> +62 812-3456-7890</div>
+            <div class="info-item"><span class="label">Alamat:</span> Jakarta, Indonesia</div>
+            <div class="info-item"><span class="label">Pekerjaan:</span> Web Developer</div>
+        </div>
+    </div>
 </body>
 </html>
