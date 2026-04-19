@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengaturan - RafahMatkul</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="settings-page">
+
+    <nav class="navbar">
+        <div class="logo">Rafah<span>Matkul</span></div>
+        <a href="beranda.html" class="btn-back"><i class="fas fa-arrow-left"></i> Kembali</a>
+    </nav>
+
+    <main class="container">
+        <header class="settings-header">
+            <h1><i class="fas fa-cog"></i> Pengaturan</h1>
+            <p>Sesuaikan tampilan website agar nyaman saat belajar.</p>
+        </header>
+
+        <section class="settings-grid">
+            <div class="settings-card">
+                <h3><i class="fas fa-paint-brush"></i> Tampilan</h3>
+                
+                <div class="setting-item">
+                    <div class="setting-info">
+                        <span>Mode Gelap<p>(Beta)</p></span>
+                        <small>Ubah tampilan menjadi gelap untuk melindungi mata.</small>
+                    </div>
+                    <label class="switch">
+                        <input type="checkbox" id="darkModeToggle" onclick="toggleDarkMode()">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+
+                <div class="setting-item">
+                    <div class="setting-info">
+                        <span>Kontras Tinggi<p>(Beta)</p></span>
+                        <small>Font lebih tajam dan tebal agar mudah dibaca.</small>
+                    </div>
+                    <label class="switch">
+                        <input type="checkbox" id="contrastToggle" onclick="toggleContrast()">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="settings-card">
+                <h3><i class="fas fa-accessibility"></i> Aksesibilitas</h3>
+                
+                <div class="setting-item">
+                    <div class="setting-info">
+                        <span>Mode Sederhana<p>(Beta)</p></span>
+                        <small>Hapus gambar/ikon, hanya tampilkan teks saja.</small>
+                    </div>
+                    <label class="switch">
+                        <input type="checkbox" id="simpleModeToggle" onclick="toggleSimpleMode()">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+
+                <div class="setting-item disabled">
+                    <div class="setting-info">
+                        <span>Mode Satu Halaman (Segera)</span>
+                        <small>Tampilkan semua konten dalam 1 scroll panjang.</small>
+                    </div>
+                    <i class="fas fa-lock"></i>
+                </div>
+            </div>
+
+            <div class="settings-card">
+                <h3><i class="fas fa-bell"></i> Notifikasi Tugas</h3>
+                <div class="setting-item">
+                    <div class="setting-info">
+                        <span>Ingatkan Deadline<p>(Beta)</p></span>
+                        <small>Munculkan notifikasi jika tugas hampir dikumpul.</small>
+                    </div>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <div class="settings-footer">
+            <button class="btn-save" onclick="saveSettings()">Simpan Perubahan</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
