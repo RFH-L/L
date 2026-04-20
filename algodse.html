@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritma & Struktur Data - RafahMatkul</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+</head>
+<body class="matkul-page algo-theme">
+
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-code"></i> Rafah<span>Matkul</span>
+        </div>
+        <div class="nav-links">
+            <a href="beranda.html"><i class="fas fa-home"></i> Beranda</a>
+            <a href="profil.html"><i class="fas fa-user"></i> Profil</a>
+        </div>
+    </nav>
+
+    <header class="matkul-header">
+        <div class="container">
+            <h1>Algoritma & Struktur Data</h1>
+            <p>Dosen: Dr. Ir. Budi Raharjo, M.T.</p>
+            <div class="progress-container">
+                <small>Progress Mata Kuliah: 60%</small>
+                <div class="progress-bar"><div class="progress-fill" style="width: 60%;"></div></div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="search-section">
+            <input type="text" id="taskSearch" placeholder="Cari materi (Array, Stack, Queue...)" onkeyup="filterTasks()">
+        </div>
+
+        <div class="task-grid">
+            <div class="task-item-card done">
+                <div class="task-icon"><i class="fas fa-list-ol"></i></div>
+                <div class="task-info">
+                    <h3>Implementasi Array & Linked List</h3>
+                    <p>Deadline: 10 Maret 2026</p>
+                    <span class="status-badge">Selesai</span>
+                </div>
+                <a href="#" class="btn-view">Buka</a>
+            </div>
+
+            <div class="task-item-card pending">
+                <div class="task-icon"><i class="fas fa-layer-group"></i></div>
+                <div class="task-info">
+                    <h3>Struktur Data Stack & Queue</h3>
+                    <p>Deadline: 25 April 2026</p>
+                    <span class="status-badge">Sedang Dikerjakan</span>
+                </div>
+                <a href="#" class="btn-view">Kerjakan</a>
+            </div>
+
+            <div class="task-item-card warning">
+                <div class="task-icon"><i class="fas fa-tree"></i></div>
+                <div class="task-info">
+                    <h3>Binary Search Tree (BST)</h3>
+                    <p>Deadline: 05 Mei 2026</p>
+                    <span class="status-badge">Belum Mulai</span>
+                </div>
+                <a href="#" class="btn-view">Lihat</a>
+            </div>
+
+            <div class="task-item-card warning">
+                <div class="task-icon"><i class="fas fa-project-diagram"></i></div>
+                <div class="task-info">
+                    <h3>Algoritma Sorting & Searching</h3>
+                    <p>Deadline: 20 Mei 2026</p>
+                    <span class="status-badge">Belum Mulai</span>
+                </div>
+                <a href="#" class="btn-view">Lihat</a>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
